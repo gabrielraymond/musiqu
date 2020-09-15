@@ -11,10 +11,24 @@
         background-color: rgba(125, 184, 238, 0.2);
         padding: 1%;
     }
+
+    #instrument{
+        height : 990px;
+    }
+
+    .flex-list{
+        flex-wrap: wrap;
+      }
+      
+      .flex-list li{
+        flex: auto;
+        width: 40%;
+      }
+
 }
 
 
-@media all and (max-width: 775px){
+@media all and (max-width: 680px){
     .header-right{
         display: none;
     }
@@ -29,6 +43,27 @@
     }
     .btn-wrapper {
         margin: 10px auto;
-      }
+    }
+    #instrument{
+        height : 790px;
+    }
+    .contact-list{
+        flex-wrap: wrap;
+    }
+      
+    .contact-list li{
+        flex: auto;
+        width: 98%;
+    }
+    #contact textarea{
+        height: 100px;
+    }
 
+    .contact-form{
+        padding-top: 15px;
+    }
+
+    .map{
+        padding: 15px 10px;
+    }
 }

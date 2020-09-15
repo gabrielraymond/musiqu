@@ -137,11 +137,22 @@ header {
   margin: 20px 10px;
 }
 
+.flex-list{
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0 10px;
+}
+
+.flex-list li{
+  flex: auto;
+  width: 20%;
+}
+
 .gallery {
   margin: 10px;
   border: 1px solid #ccc;
   float: left;
-  width: 23%;
 }
 
 .gallery:hover {
@@ -184,16 +195,28 @@ header {
 }
 
 .contact-content{
-	width: 950px;
+	width: 95%px;
 	height: 450px;
 	margin: 0 auto;
+}
+
+.contact-list{
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0 10px;
+}
+
+.contact-list li{
+  flex: auto;
+  width: 50%;
 }
 
 .contact-form{
 	padding-top: 30px;
 	float: left;
-	width: 47.5%;
-  	margin: 0 10px;
+  margin: 0 10px;
+  width: 93%;
 }
 
 #contact h1{
@@ -224,11 +247,16 @@ input[type="submit"]:hover{
 	background-color: #148fd7;
 }
 
-#map{
-	padding-top: 30px;
+.map{
+  padding: 30px 10px 0 10px;
 	float: left;
-	width: 47.5%;
-	margin: 0 10px;
+  margin: 0 10px;
+  width: 90%;
+  height: 95%;
+}
+.map iframe{
+  width: 100%;
+  height: 100%
 }
 
 /*--                footer               --*/
