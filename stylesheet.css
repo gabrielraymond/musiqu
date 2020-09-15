@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: "Lucida Grande";
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  img{
+      max-width: 100%; max-height: 100%;
+  }
+
+  .clear {
+    clear: left;
+    clear: right;
+  }
+  
+  .container {
+    max-width: 1170px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+
+  header {
+    height: 65px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.116);
+    position :fixed;
+    top: 0;
+    z-index: 10;
+  }
+  
+  .logo {
+    width: 124px;
+  }
+  
+  .header-left {
+      float: left;
+      padding-left: 180px;
+  }
+  .header-left img {
+    width: 180px;
+}
+  
+  .header-right {
+      margin-right: -25px;
+      margin-top: -25px;
+  }
+  
+  .header-right a {
+    line-height: 65px;
+    padding: 0 25px;
+    color: white;
+    display: block;
+    float: left;
+    transition: all 0.5s;
+  }
+  
+  .header-right a:hover {
+    background-color: rgba(0, 0, 0, 0.89);
+  }
+  
+  .top-wrapper {
+    padding: 130px 0 100px 0;
+    background-image: url('Assets/pexels-karolina-grabowska-4472063.jpg') ;
+    background-size: cover;
+    color: black;
+    text-align: left;
+    height: 630px;
+  }
+
+  .intro{
+    margin-left: 45%;
+    background-color:rgba(0, 0, 0, 0.116);
+    padding: 1%;
+  }
+
+  .intro h1{
+    font-family: 'Roboto';font-size: 46px;
+  }
+  .intro span{
+    font-size: 28px;
+  }
+
+
+  .btn-wrapper {
+    margin: 10px 0 10px 200px;
+  }
+  
+  .btn {
+    padding: 16px 40px;
+    color: rgb(255, 1, 1);
+    display: inline-block;
+    opacity: 0.7;
+    border: black;
+    border-style: solid;
+    text-align: center;
+  }
+  
+  .btn-wrapper p {
+    margin: 10px 0;
+  }
+  
+  .instagram {
+    background-color: rgba(43, 43, 43, 0.116);
+  }

@@ -1,0 +1,35 @@
+/* For Tablets */
+@media all and (max-width: 1000px){
+
+    .header-left {
+        float: left;
+        padding-left: 0px;
+    }
+
+    .intro{
+        margin-left: 40%;
+        background-color: rgba(125, 184, 238, 0.2);
+        padding: 1%;
+    }
+}
+
+
+@media all and (max-width: 775px){
+    .header-right{
+        display: none;
+    }
+    .intro{
+        margin-left: 0;
+        background-color: rgba(125, 184, 238, 0.5);
+        padding: 1%;
+        text-align: center;
+        font
+    }
+    .intro h1{
+        font-size: 40px;
+    }
+    .btn-wrapper {
+        margin: 10px auto;
+      }
+
+}
