@@ -1,112 +1,253 @@
-* {
-    box-sizing: border-box;
-  }
-  
-  body {
-    margin: 0;
-    font-family: "Lucida Grande";
-  }
-  
-  a {
-    text-decoration: none;
-  }
-  
-  img{
-      max-width: 100%; max-height: 100%;
-  }
-
-  .clear {
-    clear: left;
-    clear: right;
-  }
-  
-  .container {
-    max-width: 1170px;
-    width: 100%;
-    padding: 0 15px;
-    margin: 0 auto;
-  }
-
-  header {
-    height: 65px;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.116);
-    position :fixed;
-    top: 0;
-    z-index: 10;
-  }
-  
-  .logo {
-    width: 124px;
-  }
-  
-  .header-left {
-      float: left;
-      padding-left: 180px;
-  }
-  .header-left img {
-    width: 180px;
+*{
+  box-sizing: border-box;
 }
   
-  .header-right {
-      margin-right: -25px;
-      margin-top: -25px;
-  }
+body {
+  margin: 0;
+  font-family: "Roboto";
+}
   
-  .header-right a {
-    line-height: 65px;
-    padding: 0 25px;
-    color: white;
-    display: block;
-    float: left;
-    transition: all 0.5s;
-  }
+a {
+  text-decoration: none;
+}
   
-  .header-right a:hover {
-    background-color: rgba(0, 0, 0, 0.89);
-  }
-  
-  .top-wrapper {
-    padding: 130px 0 100px 0;
-    background-image: url('Assets/pexels-karolina-grabowska-4472063.jpg') ;
-    background-size: cover;
-    color: black;
-    text-align: left;
-    height: 630px;
-  }
+img{
+    max-width: 100%; max-height: 100%;
+}
 
-  .intro{
-    margin-left: 45%;
-    background-color:rgba(0, 0, 0, 0.116);
-    padding: 1%;
-  }
-
-  .intro h1{
-    font-family: 'Roboto';font-size: 46px;
-  }
-  .intro span{
-    font-size: 28px;
-  }
-
-
-  .btn-wrapper {
-    margin: 10px 0 10px 200px;
-  }
+.clear {
+  clear: left;
+  clear: right;
+}
   
-  .btn {
-    padding: 16px 40px;
-    color: rgb(255, 1, 1);
-    display: inline-block;
-    opacity: 0.7;
-    border: black;
-    border-style: solid;
-    text-align: center;
-  }
+.container {
+  max-width: 1170px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+header {
+  height: 65px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.116);
+  position :fixed;
+  top: 0;
+  z-index: 10;
+}
   
-  .btn-wrapper p {
-    margin: 10px 0;
-  }
+.logo {
+  width: 124px;
+}
   
-  .instagram {
-    background-color: rgba(43, 43, 43, 0.116);
-  }
+.header-left {
+  float: left;
+  padding-left: 180px;
+}
+
+.header-left img {
+  width: 180px;
+}
+  
+.header-right {
+  margin-right: -25px;
+  margin-top: -25px;
+}
+  
+.header-right a {
+  line-height: 65px;
+  padding: 0 25px;
+  color: white;
+  display: block;
+  float: left;
+  transition: all 0.5s;
+}
+  
+.header-right a:hover {
+  background-color: rgba(0, 0, 0, 0.89);
+}
+  
+.top-wrapper {
+  padding: 130px 0 100px 0;
+  background-image: url('Assets/pexels-karolina-grabowska-4472063.jpg') ;
+  background-size: cover;
+  color: black;
+  text-align: left;
+  height: 630px;
+}
+
+.intro{
+  margin-left: 45%;
+  background-color:rgba(0, 0, 0, 0.116);
+  padding: 1%;
+}
+
+.intro h1{
+  font-family: 'Roboto';font-size: 46px;
+}
+
+.intro span{
+  font-size: 28px;
+}
+
+
+.btn-wrapper {
+  margin: 10px 0 10px 200px;
+}
+  
+.btn {
+  padding: 16px 40px;
+  color: rgb(255, 1, 1);
+  display: inline-block;
+  opacity: 0.7;
+  border: black;
+  border-style: solid;
+  text-align: center;
+}
+  
+.btn-wrapper p {
+  margin: 10px 0;
+}
+  
+.instagram {
+  background-color: rgba(43, 43, 43, 0.116);
+}
+
+/*--                Instrument               --*/
+
+#instrument{
+  background-color: #E6E6FA;
+	color: black;
+	text-align: center;
+	height : 630px;
+	padding: 60px 20px 0 20px;
+}
+
+.about{
+  text-align: center;
+  font-size: 24px;
+}
+
+.about h1{
+  font-size: 46px;
+}
+
+.project-content{
+  text-align: center;
+  margin: 20px 10px;
+}
+
+.gallery {
+  margin: 10px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 23%;
+}
+
+.gallery:hover {
+  border: 1px solid #777;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+/*--                coach               --*/
+
+#coach{
+  background-image: url('Assets/pexels-stas-knop-1261578.jpg') ;
+  background-size: cover;
+  color: black;
+  text-align: center;
+  height : 630px;
+  padding: 60px 20px 0 20px;
+}
+
+
+/*--                contact               --*/
+
+
+#contact{
+	background-image: url('Assets/pexels-sound-on-3394659.jpg');
+	background-size: cover;
+	color: black;
+	color: black;
+  text-align: center;
+  height : 580px;
+  padding: 60px 20px 0 20px;
+}
+
+.contact-content{
+	width: 950px;
+	height: 450px;
+	margin: 0 auto;
+}
+
+.contact-form{
+	padding-top: 30px;
+	float: left;
+	width: 47.5%;
+  	margin: 0 10px;
+}
+
+#contact h1{
+	text-align: center;
+	color: white;
+	text-shadow: 2px 2px black;
+}
+
+#contact input, #contact textarea{
+	display: block;
+	width: 100%;
+	height: 30px;
+	margin-bottom: 12px;
+	border: 2px solid black;
+}
+
+#contact textarea{
+	height: 130px;
+}
+
+input[type="submit"]{
+	background-color: #0074b9;
+	color: white;
+}
+
+input[type="submit"]:hover{
+	cursor: pointer;
+	background-color: #148fd7;
+}
+
+#map{
+	padding-top: 30px;
+	float: left;
+	width: 47.5%;
+	margin: 0 10px;
+}
+
+/*--                footer               --*/
+
+
+
+footer{
+  background-color: black;
+	color: white;
+  text-align: center;
+  height : 45px;
+}
+
+footer p{
+  padding: 13px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+footer img{
+  float: left
+}

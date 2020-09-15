@@ -17,16 +17,15 @@
 				</div>
 				<span class="bar"><img src="solid/bars.svg" alt=""></span>
 				<div class="header-right">
-					<a href="#home" onclick="myFunction()">HOME</a>
-                    <a href="#about" onclick="myFunction()">ABOUT</a>
-					<a href="#interest" onclick="myFunction()">INTEREST</a>
-					<a href="#project" onclick="myFunction()">PROJECT</a>
+					<a href="#main" onclick="myFunction()">HOME</a>
+                    <a href="#instrument" onclick="myFunction()">ABOUT MUSIQU</a>
+					<a href="#coach" onclick="myFunction()">COACH</a>
 					<a href="#contact"onclick="myFunction()" >CONTACT</a>
 				</div>
 			</div>
         </header>
 
-        <div class="main">
+        <div id="main">
             <div class="top-wrapper">
                 <div class="container">
                     <div class="intro">
@@ -40,13 +39,90 @@
             </div>
         </div>
 
-        <div class="instrument">
+        <div id="instrument">
             <div class="container">
-                <div>
+                <div class="about">
+                    <h1>About MusiQu</h1>
+                    "MusiQu is a platform that connects music coaches with students throughout Indonesia <br>
+                    and makes it easy for you to get the closest and most qualified music coach"
+                </div>
+                <div class="project-content">
+                    <div class="gallery">
+                        <a target="_blank" href="Assets/jaclyn-clark-xnKHmIO_Ae0-unsplash.jpg">
+                            <img src="Assets/jaclyn-clark-xnKHmIO_Ae0-unsplash.jpg" alt="Cinque Terre" width="600" height="400">
+                        </a>
+                        <div class="desc">Piano</div>
+                    </div>
+
+                    <div class="gallery">
+                        <a target="_blank" href="Assets/ingridi-alves-photograph-yePWDGPUWO0-unsplash.jpg">
+                            <img src="Assets/ingridi-alves-photograph-yePWDGPUWO0-unsplash.jpg" alt="Cinque Terre" width="600" height="400">
+                        </a>
+                        <div class="desc">Drumm</div>
+                    </div>
+
+                    <div class="gallery">
+                        <a target="_blank" href="Assets/kari-shea-YCQFgqOzLmU-unsplash.jpg">
+                          <img src="Assets/kari-shea-YCQFgqOzLmU-unsplash.jpg" alt="Cinque Terre" width="600" height="400">
+                        </a>
+                        <div class="desc">Guitar</div>
+                    </div>
+
+                    <div class="gallery">
+                        <a target="_blank" href="Assets/johannes-weber-9mwdppcQcIU-unsplash.jpg">
+                            <img src="Assets/johannes-weber-9mwdppcQcIU-unsplash.jpg" alt="Cinque Terre" width="600" height="400">
+                        </a>
+                        <div class="desc">Bass</div>
+                    </div>
 
                 </div>
             </div>
         </div>
+
+        <div id="coach">
+            <div class="container">
+                <div class="coach-content">
+                    <div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="contact">
+			<div class="container">
+				<h1> Contact </h1>
+				<div class="contact-content">
+					<div class="contact-form">
+						<form action="" novalidate onsubmit="return validasi(this)">
+							<input type="text" nama="name" placeholder="Name">
+							<input type="email" nama="email" placeholder="Email">
+							<textarea name="message" placeholder="Message" rows="8" cols="40"></textarea>
+							<input type="submit" name="submit" value="message">
+						</form>
+					</div>
+					<div id= "map">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.668179257392!2d106.8692211100032!3d-6.563501350414606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c7b2f3574fe7%3A0x9aebc80bc8a0f778!2sSABUA%20OM%20ENO!5e0!3m2!1sen!2sid!4v1598508229879!5m2!1sen!2sid" width="450" height="250" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+					</div>
+				</div>
+			</div>
+			<div class="clear"></div>
+        </div>
+
+        <footer>
+            <img class="logo" src="Assets/Logo.png">
+             <p>&copy; MusiQu 2020 </p>
+        </footer>
+        <div class="clear"></div>
+
+
     </body>
+
+    <script>
+        function myFunction() {
+          document.documentElement.style.scrollBehavior = "smooth";
+        }
+        </script>
 
 </html>
