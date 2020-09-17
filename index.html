@@ -7,6 +7,8 @@
 		<link href='https://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css' >
         <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
         <link rel="stylesheet" href="responsive.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     
     <body>
@@ -17,11 +19,29 @@
 				</div>
 				<span class="bar"><img src="solid/bars.svg" alt=""></span>
 				<div class="header-right">
-					<a href="#main" onclick="myFunction()">HOME</a>
-                    <a href="#instrument" onclick="myFunction()">ABOUT MUSIQU</a>
-					<a href="#coach" onclick="myFunction()">COACH</a>
-					<a href="#contact"onclick="myFunction()" >CONTACT</a>
-				</div>
+					<a href="#main" onclick="myFunctionS()">HOME</a>
+                    <a href="#instrument" onclick="myFunctionS()">ABOUT MUSIQU</a>
+					<a href="#coach" onclick="myFunctionS()">COACH</a>
+					<a href="#contact"onclick="myFunctionS()" >CONTACT</a>
+                </div>
+                <div class="mobile-container">
+
+                    <!-- Top Navigation Menu -->
+                    <div class="topnav">
+                      <a href="#home" class="active">Menu</a>
+                      <div id="myLinks">
+                        <a href="#main" onclick="myFunctionS()">HOME</a>
+                        <a href="#instrument" onclick="myFunctionS()">ABOUT MUSIQU</a>
+                        <a href="#coach" onclick="myFunctionS()">COACH</a>
+                        <a href="#contact"onclick="myFunctionS()" >CONTACT</a>
+                      </div>
+                      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                      </a>
+                    </div>
+                    
+                    <!-- End smartphone / tablet look -->
+                </div>
 			</div>
         </header>
 
@@ -32,7 +52,7 @@
                         <h1>Welcome to MusiQu<br><span>"The place where you find your music coach"</span></h1>
                         
                         <div class="btn-wrapper">
-                            <a href="https://www.instagram.com/grdimage_/?hl=id" target="_blank" class="btn instagram">Find Your Coach &#8595</a>
+                            <a href="#coach"  class="btn instagram" onclick="myFunctionS()">Find Your Coach &#8595</a>
                         </div>
                     </div>
                 </div>
@@ -59,7 +79,7 @@
                             <a target="_blank" href="Assets/ingridi-alves-photograph-yePWDGPUWO0-unsplash.jpg">
                                 <img src="Assets/ingridi-alves-photograph-yePWDGPUWO0-unsplash.jpg" alt="Cinque Terre" width="600" height="400">
                             </a>
-                            <div class="desc">Drumm</div>
+                            <div class="desc">Drum</div>
                         </li>
 
                         <li class="gallery">
@@ -83,10 +103,117 @@
 
         <div id="coach">
             <div class="container">
-                <div class="coach-content">
-                    <div>
+                <div class="coach-label">
+                    <h1>Pick Your Coach</h1>
+                    <div class="coach-content">
+                        
+                        <div class="slideshow-container">
 
+                            <div style="text-align:center">
+                                <span class="dot" onclick="currentSlide(1)"></span> 
+                                <span class="dot" onclick="currentSlide(2)"></span> 
+                                <span class="dot" onclick="currentSlide(3)"></span> 
+                            </div>
+
+                            <div class="mySlides fade">
+                              <div class="numbertext">1 / 3</div>
+                                <div class="content-card">
+                                    <div class="card">
+                                        <img src="Assets/pexels-ali-pazani-2787341.jpg" alt="Avatar" style="width:100%">
+                                        <div class="container">
+                                        <b>Name     : Bella</b>
+                                        <p>Skill    : Piano</p> 
+                                        <a href="https://www.instagram.com/grdimage_/?hl=id" target="_blank" class="box wa">WhatsUpp</a>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img src="Assets/pexels-ali-pazani-3433308.jpg" alt="Avatar" style="width:100%">
+                                        <div class="container">
+                                        <b>Name     : Mario</b>
+                                        <p>Skill    : Guitar & Bass</p> 
+                                        <a href="https://www.instagram.com/grdimage_/?hl=id" target="_blank" class="box wa">WhatsUpp</a>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img src="Assets/pexels-ali-pazani-3799348.jpg" alt="Avatar" style="width:100%">
+                                        <div class="container">
+                                        <b>Name     : Sarah</b>
+                                        <p>Skill    : Drum</p> 
+                                        <a href="https://www.instagram.com/grdimage_/?hl=id" target="_blank" class="box wa">WhatsUpp</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="mySlides fade">
+                              <div class="numbertext">2 / 3</div>
+                                <div class="content-card">
+                                    <div class="card">
+                                        <img src="Assets/pexels-ali-pazani-3799348.jpg" alt="Avatar" style="width:100%">
+                                        <div class="container">
+                                        <h4><b>Sarah</b></h4> 
+                                        <p>Drum</p> 
+                                        <a href="https://www.instagram.com/grdimage_/?hl=id" target="_blank" class="box wa">WhatsUpp</a>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img src="Assets/pexels-ali-pazani-2787341.jpg" alt="Avatar" style="width:100%">
+                                        <div class="container">
+                                        <h4><b>Bella</b></h4> 
+                                        <p>Piano</p> 
+                                        <a href="https://www.instagram.com/grdimage_/?hl=id" target="_blank" class="box wa">WhatsUpp</a>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img src="Assets/pexels-ali-pazani-3433308.jpg" alt="Avatar" style="width:100%">
+                                        <div class="container">
+                                        <h4><b>Mario</b></h4> 
+                                        <p>Guitar & Bass</p> 
+                                        <a href="https://www.instagram.com/grdimage_/?hl=id" target="_blank" class="box wa">WhatsUpp</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="mySlides fade">
+                              <div class="numbertext">3 / 3</div>
+                                <div class="content-card">
+                                    <div class="card">
+                                        <img src="Assets/pexels-ali-pazani-3433308.jpg" alt="Avatar" style="width:100%">
+                                        <div class="container">
+                                        <h4><b>Mario</b></h4> 
+                                        <p>Guitar & Bass</p> 
+                                        <a href="https://www.instagram.com/grdimage_/?hl=id" target="_blank" class="box wa">WhatsUpp</a>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img src="Assets/pexels-ali-pazani-3799348.jpg" alt="Avatar" style="width:100%">
+                                        <div class="container">
+                                        <h4><b>Sarah</b></h4> 
+                                        <p>Drum</p> 
+                                        <a href="https://www.instagram.com/grdimage_/?hl=id" target="_blank" class="box wa">WhatsUpp</a>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img src="Assets/pexels-ali-pazani-2787341.jpg" alt="Avatar" style="width:100%">
+                                        <div class="container">
+                                        <h4><b>Bella</b></h4> 
+                                        <p>Piano</p> 
+                                        <a href="https://www.instagram.com/grdimage_/?hl=id" target="_blank" class="box wa">WhatsUpp</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                            
+                            </div>
+                            <br>
+                            
                     </div>
+
+                <div class="clear"></div>
                 </div>
             </div>
 
@@ -128,8 +255,44 @@
     </body>
 
     <script>
-        function myFunction() {
+        function myFunctionS() {
           document.documentElement.style.scrollBehavior = "smooth";
+        }
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        }
+
+        function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
         }
         </script>
 
