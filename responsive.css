@@ -148,4 +148,10 @@
       .gallery:hover {
         width: 44%;
       }
+      .box{
+        font-size: 0;
+      }
+      .box img{
+        width: 30px;
+      }
 }

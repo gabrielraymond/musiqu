@@ -301,7 +301,10 @@ header {
 .ig {
   background-image: linear-gradient(to top right,#FEDA77,#F58529 ,#DD2A7B ,#8134AF, #515BD4)	;
 }
-
+.box img{
+  max-width: 17px;
+  padding-right: 5px;
+}
 
 
 /* On hover, add a black background color with a little bit see-through */
