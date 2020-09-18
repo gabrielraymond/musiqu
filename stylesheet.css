@@ -36,6 +36,7 @@ header {
   position :fixed;
   top: 0;
   z-index: 10;
+  text-shadow: 2px 2px black;
 }
   
 .logo {
@@ -45,6 +46,14 @@ header {
 .header-left {
   float: left;
   padding-left: 180px;
+  animation-name: gal;
+  animation-duration: 4s;
+}
+
+@keyframes gal {
+  0%   {padding-left: 0px; }
+  50%  {padding-left: 400px;}
+  100% {padding-left: 180px;}
 }
 
 .header-left img {
@@ -86,6 +95,13 @@ header {
   margin-left: 45%;
   background-color:rgba(0, 0, 0, 0.116);
   padding: 1%;
+  animation-name: lol;
+  animation-duration: 3s;
+}
+
+@keyframes lol {
+  0%   {margin-left: 0%;}
+  100% {margin-left: 45%;}
 }
 
 .intro h1{
@@ -136,6 +152,13 @@ header {
 
 .about h1{
   font-size: 46px;
+  animation-name: lery;
+  animation-duration: 4s;
+}
+
+@keyframes lery {
+  0%   {top: 50px;}
+  100% {top: 0px;}
 }
 
 .project-content{
@@ -148,6 +171,7 @@ header {
   flex-wrap: wrap;
   list-style-type: none;
   padding: 0 10px;
+  margin-top: 50px;
 }
 
 .flex-list li{
@@ -274,8 +298,8 @@ header {
   opacity: 1;
 }
   
-.wa {
-  background-color: rgb(22, 235, 93);
+.ig {
+  background-image: linear-gradient(to top right,#FEDA77,#F58529 ,#DD2A7B ,#8134AF, #515BD4)	;
 }
 
 
