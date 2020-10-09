@@ -1,5 +1,7 @@
 *{
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
   
 body {
@@ -27,59 +29,53 @@ img{
   margin: 0 auto;
 }
 
-.mySlides {display: none}
 
-header {
-  height: 65px;
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30 10%;
+  height: 50px;
+  background-color: #262626;
+  border-radius: 30px;
+  position: fixed;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.116);
-  position :fixed;
-  top: 0;
-  z-index: 10;
-  text-shadow: 2px 2px black;
-}
-  
-.logo {
-  width: 124px;
-}
-  
-.header-left {
-  float: left;
-  padding-left: 180px;
-  animation-name: gal;
-  animation-duration: 4s;
+  margin-top: 10px;
 }
 
-@keyframes gal {
-  0%   {padding-left: 0px; }
-  50%  {padding-left: 400px;}
-  100% {padding-left: 180px;}
+li, a{
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 22px;
+  color: floralwhite;
 }
 
-.header-left img {
-  width: 180px;
-}
-  
-.header-right {
-  margin-right: -25px;
-  margin-top: -25px;
-}
-  
-.header-right a {
-  line-height: 65px;
-  padding: 0 25px;
-  color: white;
-  display: block;
-  float: left;
-  transition: all 0.5s;
-}
-  
-.header-right a:hover {
-  background-color: rgba(0, 0, 0, 0.89);
+.navbar{
+  margin-right: 20px;
 }
 
-.mobile-container{
-  display: none;
+.nav-list{
+  list-style: none;
+}
+
+.nav-item{
+  height: 50px;
+  border-radius: 30px;
+}
+
+.nav-list li{
+  width: 100px;
+  display: inline-block;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.nav-list li a{
+  transition: all 0.3s ease 0s;
+}
+
+.nav-list li a:hover{
+  color: chocolate;
 }
   
 .top-wrapper {
@@ -121,7 +117,6 @@ header {
   padding: 16px 40px;
   color: rgb(255, 1, 1);
   display: inline-block;
-  opacity: 0.7;
   border: black;
   border-style: solid;
   text-align: center;

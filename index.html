@@ -13,35 +13,28 @@
     
     <body>
         <header>
-            <div class="container">
-				<div class="header-left">
-					<img class="logo" src="Assets/Logo.png">
-				</div>
-				<div class="header-right">
-					<a href="#main" onclick="myFunctionS()">HOME</a>
-                    <a href="#instrument" onclick="myFunctionS()">ABOUT MUSIQU</a>
-					<a href="#coach" onclick="myFunctionS()">COACH</a>
-					<a href="#contact"onclick="myFunctionS()" >CONTACT</a>
+            <img class="logo" src="Assets/Logo.png" />
+            <nav class="navbar">
+                <div class="hamburger-menu">
+                    <div class="line line-1"></div>
+                    <div class="line line-2"></div>
+                    <div class="line line-3"></div>
                 </div>
-                <div class="mobile-container">
-
-                    <!-- Top Navigation Menu -->
-                    <div class="topnav">
-                      <a href="#home" class="active">Menu</a>
-                      <div id="myLinks">
-                        <a href="#main" onclick="myFunctionS()">HOME</a>
-                        <a href="#instrument" onclick="myFunctionS()">ABOUT MUSIQU</a>
-                        <a href="#coach" onclick="myFunctionS()">COACH</a>
-                        <a href="#contact"onclick="myFunctionS()" >CONTACT</a>
-                      </div>
-                      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                        <i class="fa fa-bars"></i>
-                      </a>
-                    </div>
-                    
-                    <!-- End smartphone / tablet look -->
-                </div>
-			</div>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#main" class="nav-link" onclick="myFunctionS()">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#instrument" class="nav-link" onclick="myFunctionS()">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#coach" class="nav-link" onclick="myFunctionS()">Coach</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link" onclick="myFunctionS()">Contact</a>
+                    </li>
+                </ul>
+            </nav>
         </header>
 
         <div id="main">
@@ -253,47 +246,6 @@
 
     </body>
 
-    <script>
-        function myFunctionS() {
-          document.documentElement.style.scrollBehavior = "smooth";
-        }
-
-        var slideIndex = 1;
-        showSlides(slideIndex);
-
-        function plusSlides(n) {
-        showSlides(slideIndex += n);
-        }
-
-        function currentSlide(n) {
-        showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {slideIndex = 1}    
-        if (n < 1) {slideIndex = slides.length}
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";  
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex-1].style.display = "block";  
-            dots[slideIndex-1].className += " active";
-        }
-
-        function myFunction() {
-            var x = document.getElementById("myLinks");
-            if (x.style.display === "block") {
-                x.style.display = "none";
-            } else {
-                x.style.display = "block";
-            }
-        }
-
-        </script>
+    <script src="script.js"></script>
 
 </html>
